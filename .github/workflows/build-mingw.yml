@@ -55,8 +55,8 @@ jobs:
             ${{ github.workspace }}\mingw64\bin;^
             ${{ github.workspace }}\cmake-3.24.0-windows-x86_64\bin;
             set CD_LINUX=%CD:\=/%
-            gcc --version &&^
             cd DirectXMath &&^
+            gcc --version &&^
             cmake.exe -G"MinGW Makefiles" ^
             -DCMAKE_BUILD_TYPE=Release ^
             -DBUILD_SHARED_LIBS=OFF ^
